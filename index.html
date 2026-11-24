@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olive &amp; Ember - Mediterranean kitchen</title>
+<meta name="description" content="Concept website for a Mediterranean restaurant. Design demo.">
+<style>
+:root{--bg:#faf5ec;--ink:#2b2118;--mut:#7a6a58;--g:#3f5a3a;--c:#c8643c;--card:#fffdf8;--line:#e6dac8}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}.w{max-width:1040px;margin:auto;padding:0 22px}
+.sans{font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+nav{position:fixed;top:0;left:0;right:0;z-index:9;transition:.3s}nav.s{background:#faf5ece8;backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-size:22px;font-weight:700;color:#fff;transition:.3s}nav.s .logo{color:var(--ink)}
+nav ul{display:flex;gap:26px;list-style:none;color:#fff;font-size:15px}nav.s ul{color:var(--ink)}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;color:#fff;position:relative;
+background:linear-gradient(#1c1409aa,#1c1409cc),radial-gradient(circle at 20% 20%,#c8643c,transparent 45%),radial-gradient(circle at 80% 80%,#3f5a3a,transparent 50%),#2b2118}
+.hero h1{font-size:clamp(44px,8vw,92px);line-height:1;letter-spacing:-2px;font-weight:400;animation:u 1s both}
+.hero h1 em{color:#f0b48f}.hero p{max-width:480px;margin:22px auto 30px;font-size:19px;opacity:.9;animation:u 1s .2s both}
+@keyframes u{from{opacity:0;transform:translateY(24px)}}
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;background:var(--c);color:#fff;font-family:system-ui,sans-serif;font-weight:600;transition:.2s;animation:u 1s .4s both}
+.btn:hover{transform:translateY(-2px);background:#b0522d}
+section{padding:90px 0}h2{font-size:clamp(30px,4.5vw,46px);font-weight:400;letter-spacing:-1px;text-align:center}
+.k{text-align:center;color:var(--c);font-family:system-ui,sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:12px;margin-bottom:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about .img{aspect-ratio:4/5;border-radius:200px 200px 24px 24px;background:radial-gradient(circle at 30% 30%,#e9a77d,transparent 50%),radial-gradient(circle at 70% 75%,#6b8a5f,transparent 55%),#d8c5a5;}
+.about p{color:var(--mut);margin-top:16px}.about h2{text-align:left}
+.menu{background:var(--card);border-block:1px solid var(--line)}
+.tabs{display:flex;gap:10px;justify-content:center;margin:30px 0;flex-wrap:wrap}
+.tabs button{font-family:system-ui,sans-serif;border:1px solid var(--line);background:none;padding:9px 20px;border-radius:99px;cursor:pointer;font-size:14px;color:var(--ink)}
+.tabs button.on{background:var(--g);color:#fff;border-color:var(--g)}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:6px 50px;max-width:900px;margin:auto}
+.it{padding:16px 0;border-bottom:1px dashed var(--line)}.it div{display:flex;justify-content:space-between;gap:10px;font-size:19px}.it b{font-weight:700;color:var(--c);font-family:system-ui,sans-serif;font-size:16px}
+.it p{color:var(--mut);font-size:15px}.hide{display:none}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:40px;text-align:center}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}.box h3{font-weight:400;font-size:22px}.box p{color:var(--mut);font-family:system-ui,sans-serif;font-size:15px;margin-top:6px}
+form{max-width:520px;margin:34px auto 0;display:grid;gap:12px;font-family:system-ui,sans-serif}
+input,select{padding:13px 16px;border:1px solid var(--line);border-radius:12px;font-size:15px;background:var(--card);width:100%}
+form .btn{border:0;cursor:pointer;animation:none;font-size:15px}#ok{text-align:center;color:var(--g);font-family:system-ui,sans-serif;min-height:24px}
+footer{background:var(--ink);color:#cbbca7;text-align:center;padding:30px 20px;font-family:system-ui,sans-serif;font-size:14px}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.on{opacity:1;transform:none}
+@media(max-width:760px){nav ul{display:none}.about,.items{grid-template-columns:1fr}.about .img{max-width:320px;margin:auto}.about h2{text-align:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<nav id="n"><div class="w"><a class="logo" href="#">Olive &amp; Ember</a><ul class="sans"><li><a href="#about">Story</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li><li><a href="#book">Reserve</a></li></ul></div></nav>
+<header class="hero"><div class="w"><h1>Fire, olive oil<br>&amp; <em>good company</em></h1><p>A Mediterranean kitchen built around the wood oven. Concept design demo.</p><a class="btn" href="#book">Reserve a table</a></div></header>
+<section id="about"><div class="w about"><div class="img rv"></div><div class="rv"><div class="k" style="text-align:left">Our idea</div><h2>Simple food, cooked slowly</h2><p>Olive &amp; Ember is a made-up restaurant for this design demo. The idea: a short menu, seasonal vegetables, bread from the oven, and plates meant to be shared.</p><p>Every section of this page is built to be easy to adapt for a real restaurant: swap the text, prices and hours and it is ready.</p></div></div></section>
+<section class="menu" id="menu"><div class="w"><div class="k">The menu</div><h2 class="rv">Sample dishes</h2>
+<div class="tabs"><button class="on" data-t="s">Starters</button><button data-t="m">Mains</button><button data-t="d">Desserts</button></div>
+<div class="items" id="s"><div class="it"><div>Wood-oven flatbread<b>$6</b></div><p>Olive oil, sea salt, za'atar.</p></div><div class="it"><div>Hummus &amp; warm pita<b>$7</b></div><p>Chickpeas, tahini, lemon, paprika.</p></div><div class="it"><div>Charred eggplant<b>$9</b></div><p>Yogurt, pomegranate, mint.</p></div><div class="it"><div>Marinated olives<b>$5</b></div><p>Orange peel, thyme, chili.</p></div></div>
+<div class="items hide" id="m"><div class="it"><div>Grilled sea bream<b>$22</b></div><p>Lemon, capers, roasted fennel.</p></div><div class="it"><div>Slow lamb shoulder<b>$24</b></div><p>Rosemary, garlic, white beans.</p></div><div class="it"><div>Herb roasted chicken<b>$18</b></div><p>Potatoes, oregano, pickled onion.</p></div><div class="it"><div>Vegetable tagine<b>$16</b></div><p>Carrot, apricot, almond, couscous.</p></div></div>
+<div class="items hide" id="d"><div class="it"><div>Honey &amp; walnut baklava<b>$7</b></div><p>Filo, orange blossom.</p></div><div class="it"><div>Olive oil cake<b>$7</b></div><p>Citrus glaze, whipped yogurt.</p></div><div class="it"><div>Mint tea<b>$3</b></div><p>Fresh leaves, served in a pot.</p></div><div class="it"><div>Turkish coffee<b>$4</b></div><p>Cardamom, served with a sweet.</p></div></div>
+</div></section>
+<section id="visit"><div class="w"><div class="k">Visit</div><h2 class="rv">Come hungry</h2><div class="info">
+<div class="box rv"><h3>Hours</h3><p>Tue to Sun<br>12:00 to 23:00<br>Closed Monday</p></div>
+<div class="box rv"><h3>Place</h3><p>Example address only<br>This is a demo site</p></div>
+<div class="box rv"><h3>Good to know</h3><p>Vegetarian options<br>Groups welcome</p></div></div></div></section>
+<section id="book" style="padding-top:0"><div class="w"><div class="k">Reserve</div><h2 class="rv">Book a table</h2>
+<form id="f"><input required placeholder="Your name"><input required type="date"><select><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 to 8 guests</option></select><select><option>19:00</option><option>20:00</option><option>21:00</option></select><button class="btn">Request table</button><div id="ok"></div></form></div></section>
+<footer>© 2026 Olive &amp; Ember. A concept website, not a real restaurant. The form does not send anything.</footer>
+<script>
+const n=document.getElementById('n');addEventListener('scroll',()=>n.classList.toggle('s',scrollY>40));
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.items').forEach(i=>i.classList.toggle('hide',i.id!==b.dataset.t))});
+document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('ok').textContent='Demo only: no reservation was sent. Thank you!'};
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script></body></html>
